@@ -13,18 +13,18 @@ import Modal from "./components/Modal";
       return;
     }
 
-    console.log("Email:", inputEmail);
+    console.log(`Email: ${inputEmail}`);
 
     setShowLogin(false);
     setInputEmail("");
 
-    console.log(` Email:, ${inputEmail} is logged in`);
+    console.log(` Email: ${inputEmail} is logged in`);
   };
 
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-96">
       <button onClick={() => {setShowLogin(true)
       }} className="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
       <button onClick={() => {setShowWarning(true)
